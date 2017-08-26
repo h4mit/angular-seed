@@ -1,0 +1,12 @@
+{
+	"PANEL_DASHBOARD": {
+		"title": "User panel dashboard"
+	},
+	"PANEL": {},
+	"HOME_PAGE": {
+		"hello": " Hello"
+	},
+	"NOT_FOUND_PAGE": {
+		"msg": "404 Not Found!"
+	}
+}
