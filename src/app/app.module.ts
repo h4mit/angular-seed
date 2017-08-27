@@ -1,10 +1,8 @@
-import { NgModule } from '@angular/core';
-
+import {NgModule} from "@angular/core";
 import {ShareModule} from "./share.module";
 import {routing} from "./app.routes";
 import {PublicLayout} from "./public/layout/public.layout";
 import {PanelLayout} from "./panel/layout/panel.layout";
-import {PanelDashboard} from "./panel/dashboard/dashboard";
 import {NotFoundPage} from "./public/not-found-page/not-found-page";
 import {AppComponent} from "./app";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
@@ -13,7 +11,6 @@ import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
   declarations: [
     PublicLayout,
     PanelLayout,
-    PanelDashboard,
     NotFoundPage,
     AppComponent,
   ],
@@ -25,4 +22,5 @@ import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}

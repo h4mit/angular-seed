@@ -2,7 +2,7 @@ import {Component} from "@angular/core";
 
 @Component({
   moduleId: module.id,
-  selector: 'app-root2',
+  selector: 'panel-root',
   templateUrl: 'panel-layout.html'
 })
 export class PanelLayout {
