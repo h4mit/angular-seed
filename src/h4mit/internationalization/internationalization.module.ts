@@ -2,7 +2,7 @@
  * Created by h4mit on 27/08/2017.
  */
 import {NgModule} from "@angular/core";
-import {TranslateModule, TranslateLoader} from "@ngx-translate/core";
+import {TranslateModule, TranslateLoader, TranslateService} from "@ngx-translate/core";
 import {CommonModule} from "@angular/common";
 import {RouterModule} from "@angular/router";
 import {FormsModule} from "@angular/forms";
@@ -34,4 +34,9 @@ export function createTranslateLoader(http: HttpClient) {
   ]
 })
 
-export class InternationalizationModule {}
+export class InternationalizationModule {
+  constructor(private translate: TranslateService) {
+    translate.addLangs(["en", "fa"]);
+    translate.setDefaultLang('fa');
+  }
+}
