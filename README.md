@@ -31,4 +31,4 @@ Before running the tests make sure you are serving the app via `ng serve`.
 5. Shared Module
 
 ## Contributors
-+ H4mit ![alt text](https://avatars2.githubusercontent.com/u/4971751?v=4&s=460 "Hamid Taheri")
++ [H4mit](https://h4mit.github.io) 
