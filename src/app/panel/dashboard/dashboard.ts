@@ -4,7 +4,7 @@ import {Component} from "@angular/core";
   moduleId: module.id,
   selector: 'panel-dashboard',
   templateUrl: 'dashboard.html',
-  styleUrls: ['dashboard.sass']
+  styleUrls: ['dashboard.scss']
 })
 export class PanelDashboard {
   constructor() {

@@ -6,7 +6,6 @@ import {PanelLayout} from "./panel/layout/panel.layout";
 import {NotFoundPage} from "./public/not-found-page/not-found-page";
 import {AppComponent} from "./app";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
-import { HeaderComponent } from './public/layout/header/header.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +13,6 @@ import { HeaderComponent } from './public/layout/header/header.component';
     PanelLayout,
     NotFoundPage,
     AppComponent,
-    HeaderComponent,
   ],
   imports: [
     BrowserAnimationsModule,
