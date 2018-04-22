@@ -22,7 +22,7 @@ export class Hhttp extends Http {
 
   get(url: string, options?: RequestOptionsArgs): Observable<Response> {
     // window.document.getElementById('loading').innerHTML = "<h1> Loading ... </h1>";
-    let response = this.intercept(super.get(url, options));
+    const response = this.intercept(super.get(url, options));
     // window.document.getElementById('loading').innerHTML = "";
     return response;
   }
@@ -54,7 +54,7 @@ export class Hhttp extends Http {
   intercept(observable: Observable<Response>): Observable<Response> {
     // console.log('Loading...');
     return observable.catch((err, source) => {
-      if (err.status == 401) {
+      if (err.status === 401) {
         return Observable.empty();
       } else {
         return Observable.throw(err);
