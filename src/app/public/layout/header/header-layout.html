@@ -1,0 +1,16 @@
+
+<mat-toolbar color="primary" [dir]="'rtl'">
+    <span><mat-icon>mood</mat-icon></span>
+
+    <span>My APP :)  </span> &nbsp; &nbsp;
+    <button mat-button color="primary" routerLink="/panel/dashboard">
+      <mat-icon>home</mat-icon> Dashboard
+    </button>
+    <button mat-button color="primary" [mat-menu-trigger-for]="menu">
+      <mat-icon>settings</mat-icon> Setting
+    </button>
+  </mat-toolbar>
+  <mat-menu x-position="before" #menu="matMenu">
+    <button mat-menu-item>Option 1</button>
+    <button mat-menu-item>Option 2</button>
+  </mat-menu>
