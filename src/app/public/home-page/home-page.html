@@ -17,7 +17,8 @@
     
         <span>خانه</span> &nbsp; &nbsp;
         
-      <button mat-button (click)="sidenav.toggle()">باز و بسته کردن</button>
+      <button mat-button *ngIf="!sidenav.opened" (click)="sidenav.toggle()"><mat-icon>chevron_left</mat-icon> باز</button>
+      <button mat-button *ngIf="sidenav.opened" (click)="sidenav.toggle()"><mat-icon>chevron_right</mat-icon> بستن</button>
       </mat-toolbar>
     <mat-card>
       <!-- Coneten -->
