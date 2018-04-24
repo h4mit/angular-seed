@@ -5,7 +5,7 @@
   $background: map-get($theme, background);
   $foreground: map-get($theme, foreground);
 
-  app-footer {
+  footer-layout {
     .docs-footer-links a {
       color: mat-color($primary, default-contrast);
     }

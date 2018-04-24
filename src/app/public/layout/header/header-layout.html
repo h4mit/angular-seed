@@ -1,39 +1,25 @@
-<mat-toolbar color="primary" style="z-index: 10; position: relative" class="mat-elevation-z4">
-  <span>
-    <mat-icon>mood</mat-icon>
-  </span>
-
-  <span [routerLink]="['/']">نمومه برنامه</span> &nbsp; &nbsp;
-  <button mat-button color="primary" [routerLink]="['/panel/dashboard']" >
-    <mat-icon>dashboard</mat-icon> داشبورد
-  </button>
-  <button mat-button color="primary" [mat-menu-trigger-for]="menu">
-    <mat-icon>settings</mat-icon> تنظیمات
-  </button>
-  <them-picker></them-picker>
-</mat-toolbar>
-<mat-menu x-position="before" #menu="matMenu">
-  <button mat-menu-item [routerLink]="['/404']">404</button>
-  <button mat-menu-item>خروج</button>
-</mat-menu>
-
-<!-- <nav class="docs-navbar-header">
+<nav class="docs-navbar-header">
   <a mat-button class="docs-button" routerLink="/" aria-label="Angular Material">
-    <span>نمونه برنامه</span>
+    <mat-icon>mood</mat-icon><span>نمونه برنامه</span>
   </a>
   <a mat-button class="docs-navbar-hide-small docs-button"
      [routerLink]="['/panel/dashboard']"><mat-icon>dashboard</mat-icon> داشبورد</a>
-  <a mat-button class="docs-navbar-hide-small docs-button" routerLink="guides">Guides</a>
+  <!-- <a mat-button class="docs-navbar-hide-small docs-button" routerLink="guides">Guides</a> -->
+  <a mat-button class="docs-navbar-hide-small docs-button"
+  [mat-menu-trigger-for]="menu"><mat-icon>settings</mat-icon> تنظیمات</a>
+  <mat-menu x-position="before" #menu="matMenu">
+    <button mat-menu-item [routerLink]="['/404']">404</button>
+    <button mat-menu-item>خروج</button>
+  </mat-menu>
   <div class="flex-spacer"></div>
   <!-- TODO(tinayuangao): Uncomment this when we are ready for v6
     <version-picker></version-picker>
   -->
-  <!-- <theme-picker></theme-picker> -->
-  <!-- <a mat-button class="docs-button docs-navbar-hide-small" href="https://github.com/angular/material2"
-     aria-label="GitHub Repository">
+  <them-picker></them-picker>
+  <a mat-button class="docs-button docs-navbar-hide-small" >
     خروج
   </a>
 </nav>
 <nav class="docs-navbar docs-navbar-show-small">
-  <a mat-button class="docs-navbar-link" routerLink="guides">خروج</a> -->
-<!-- </nav> --> 
+  <a mat-button class="docs-navbar-link" routerLink="guides">خروج</a>
+</nav>

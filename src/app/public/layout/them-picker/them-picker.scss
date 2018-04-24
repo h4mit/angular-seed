@@ -56,3 +56,10 @@ $theme-picker-accent-stripe-size: 6px;
     height: $theme-picker-accent-stripe-size;
   }
 }
+
+
+
+[dir=rtl] .mat-menu-item .mat-icon {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}

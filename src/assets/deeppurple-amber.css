@@ -1184,10 +1184,10 @@ app-homepage .docs-header-start {
 app-homepage .docs-homepage-row {
   color: rgba(0, 0, 0, 0.54); }
 
-app-navbar {
+header-layout {
   color: white; }
-  app-navbar .docs-navbar, app-navbar .docs-navbar-header {
-    background: #673ab7; }
+  header-layout .docs-navbar, header-layout .docs-navbar-header {
+    background: #673ab7 ;  }
 
 .docs-toc-container {
   border-left: solid 4px #673ab7; }
