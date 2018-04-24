@@ -1,3 +1,14 @@
+@import '~@angular/material/theming';
+@import './app-theme';
+@import './assets/styles/api';
+@import './assets//styles/markdown';
+@import './assets//styles/tables';
+@import './assets//styles/general';
+
+
+// Include material core styles.
+@include mat-core();
+
 /* You can add global styles to this file, and also import other style files */
 @font-face {
     font-family: Vazir;
@@ -55,12 +66,13 @@ table,td,tr,.mat-menu-item {
     width: 400px;
     background: rgba(224, 160, 221, 0.767);
   }
+
   
-  // .mat-drawer-container {
-  //     z-index: -1 !important;
-  // }
-
-
-  .ht-container {
-        z-index: 1 !important;
-    } 
+  
+  // Define the light theme.
+  $primary: mat-palette($mat-indigo);
+  $accent:  mat-palette($mat-pink, A200, A100, A400);
+  
+  $theme: mat-light-theme($primary, $accent);
+  @include angular-material-theme($theme);
+  @include material-docs-app-theme($theme);

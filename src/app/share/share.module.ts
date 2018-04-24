@@ -19,7 +19,8 @@ import {
   MatTabsModule,
   MatToolbarModule,
   MatSnackBarModule,
-  MatGridListModule
+  MatGridListModule,
+  MatTooltipModule
 } from '@angular/material';
 /**
  * Created by h4mit on 26/08/2017.
@@ -52,6 +53,7 @@ import {
     MatToolbarModule,
     MatSnackBarModule,
     MatGridListModule,
+    MatTooltipModule
   ]
 })
 export class ShareModule {

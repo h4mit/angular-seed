@@ -8,6 +8,7 @@ import { PanelLayout } from './panel/layout/panel.layout';
 import { NotFoundPage } from './public/not-found-page/not-found-page';
 import { AppComponent } from './app';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ThemePickerModule } from './public/layout/them-picker/them-picker';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
   imports: [
     BrowserAnimationsModule,
     ShareModule,
+    ThemePickerModule,
     routing
   ],
   providers: [],
