@@ -122,6 +122,7 @@
     ],
     "component-selector": [
       true,
+      "dashed-case",
       "element",
       "app",
       "kebab-case"

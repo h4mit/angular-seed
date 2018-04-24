@@ -17,7 +17,9 @@ import {
   MatSidenavModule,
   MatSlideToggleModule,
   MatTabsModule,
-  MatToolbarModule
+  MatToolbarModule,
+  MatSnackBarModule,
+  MatGridListModule
 } from '@angular/material';
 /**
  * Created by h4mit on 26/08/2017.
@@ -48,6 +50,8 @@ import {
     MatSlideToggleModule,
     MatTabsModule,
     MatToolbarModule,
+    MatSnackBarModule,
+    MatGridListModule,
   ]
 })
 export class ShareModule {

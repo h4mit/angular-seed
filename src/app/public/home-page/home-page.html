@@ -1,6 +1,37 @@
-<h1>{{ 'HOME_PAGE.hello' | translate }}</h1>
-<span class="done">
-    <button mat-fab>
-      <mat-icon>check circle</mat-icon>
-    </button>
-</span>
+
+
+<mat-sidenav-container>
+  <mat-sidenav #sidenav mode="side" opened="true" class="ht-sidenav">
+     <!-- Sidenav -->
+     <mat-selection-list #movies>
+        <mat-list-option *ngFor="let movie of typesOfMovies">
+          {{movie}}
+        </mat-list-option>
+      </mat-selection-list>
+    <!-- End Sidenav -->
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <mat-toolbar color="primary" >
+        <span><mat-icon>home</mat-icon></span>
+    
+        <span>خانه</span> &nbsp; &nbsp;
+        
+      <button mat-button (click)="sidenav.toggle()">باز و بسته کردن</button>
+      </mat-toolbar>
+    <mat-card>
+      <!-- Coneten -->
+      <h1>{{ 'HOME_PAGE.hello' | translate }}</h1>
+      <mat-grid-list cols="4" rowHeight="100px">
+        <mat-grid-tile
+            *ngFor="let tile of tiles"
+            [colspan]="tile.cols"
+            [rowspan]="tile.rows"
+            [style.background]="tile.color">
+          {{tile.text}}
+        </mat-grid-tile>
+      </mat-grid-list>
+      <!-- End Coneten -->
+    </mat-card>
+  </mat-sidenav-content>
+</mat-sidenav-container>

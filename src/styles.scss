@@ -31,10 +31,36 @@ body {
     font-family: Vazir;
 }
 
-h1,h2,h3,h4,h5,a,div,span,button {
+h1,h2,h3,h4,h5,a,div,span,button,p,pre,b,i,strong {
     font-family: Vazir;
 }
 
-table,td,tr {
+table,td,tr,.mat-menu-item {
     font-family: Vazir;
 }
+
+.ht-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%
+  }
+  
+  .ht-sidenav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    background: rgba(224, 160, 221, 0.767);
+  }
+  
+  // .mat-drawer-container {
+  //     z-index: -1 !important;
+  // }
+
+
+  .ht-container {
+        z-index: 1 !important;
+    } 
