@@ -2,4 +2,4 @@ const gulp = require('gulp');
 const requireDir = require('require-dir');
 requireDir('./tasks');
 
-gulp.task('default', ['dic', 'dicW1', 'dicW2']);
+gulp.task('default', ['localization', 'localiz1', 'localiz2']);
