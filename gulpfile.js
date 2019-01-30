@@ -1,5 +1,9 @@
 const gulp = require('gulp');
 const requireDir = require('require-dir');
-requireDir('./tasks');
+requireDir('./tasks', { recurse: true });
 
-gulp.task('default', ['localization', 'localiz1', 'localiz2']);
+const serve = (done) => {
+    gulp.series('localization', 'localiz1', 'localiz2')(done);
+};
+
+exports.default = serve;
